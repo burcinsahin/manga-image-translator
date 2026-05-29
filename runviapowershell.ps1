@@ -1,7 +1,7 @@
 # Değişkenler
-$GirisYolu = "C:\Users\burci\Downloads\TMP\cmcs\TEST"
-$ConfigYolu = ".\examples\myconfig_ch2en.toml"
-$VenvYolu = ".\venv\Scripts\Activate.ps1"
+$GirisYolu = "..\testimages"
+$ConfigYolu = "..\examples\myconfig_ch2en.toml"
+$VenvYolu = "..\venv\Scripts\Activate.ps1"
 
 # Sanal ortamı (venv) aktif et
 . $VenvYolu
