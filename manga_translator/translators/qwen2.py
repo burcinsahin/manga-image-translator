@@ -58,7 +58,11 @@ class Qwen2Translator(OfflineTranslator, ConfigGPT):
             BitsAndBytesConfig
         )
         self.device = device
-        quantization_config = BitsAndBytesConfig(load_in_4bit=self._IS_4_BIT)
+        # Eski hali muhtemelen şuna benziyordur:
+# quantization_config = BitsAndBytesConfig(load_in_4bit=self._IS_4_BIT)
+
+# Şu şekilde değiştir:
+        quantization_config = None
         self.model = AutoModelForCausalLM.from_pretrained(
             self._TRANSLATOR_MODEL,
             torch_dtype="auto",
