@@ -32,7 +32,7 @@ echo [PROCESS] Starting translation for: "%INPUT_PATH%"
 echo [INFO] Using configuration: .\examples\myconfig2.toml
 echo.
 
-python -m manga_translator local -i "%INPUT_PATH%" --config-file ".\examples\myconfig_fr2en.toml"
+python -m manga_translator local -i "%INPUT_PATH%" --config-file ".\examples\myconfig_ch2en.toml"
 
 :: 5. FINISH
 echo.

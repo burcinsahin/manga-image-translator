@@ -1,11 +1,11 @@
 @echo off
-SET "GIRIS_YOLU=.\testimages"
-SET "CONFIG_YOLU=.\examples\myconfig_fr2en.toml"
+SET "IMGPATH=.\testimages"
+SET "CFGPATH=.\examples\myconfig_ch2en.toml"
 
 REM Venv aktif etme
 call .\venv\Scripts\activate
 
 REM Komutu çalıştır
-python -m manga_translator local -i "%GIRIS_YOLU%" --config-file "%CONFIG_YOLU%"
+python -m manga_translator local -i "%IMGPATH%" --config-file "%CFGPATH%"
 
 pause
