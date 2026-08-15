@@ -17,20 +17,20 @@ upscaler = "esrgan"
 revert_upscaling = false
 
 [translator]
-translator = "offline"
+translator = "nllb_big"
 target_lang = "ENG"
 no_text_lang_skip = false
 
 [detector]
 detector = "paddle"
 detection_size = 2048
-text_threshold = 0.5
+text_threshold = 0.3
 det_rotate = false
 det_auto_rotate = false
 det_invert = false
 det_gamma_correct = false
 box_threshold = 0.7
-unclip_ratio = 2.3
+unclip_ratio = 1.6
 
 [colorizer]
 colorization_size = 576

@@ -29,7 +29,7 @@ if exist ".\venv\Scripts\activate.bat" (
 
 :: 4. RUN THE TRANSLATION COMMAND
 echo [PROCESS] Starting translation for: "%INPUT_PATH%"
-echo [INFO] Using configuration: .\examples\myconfig2.toml
+echo [INFO] Using configuration: .\examples\myconfig_ch2en.toml
 echo.
 
 python -m manga_translator local -i "%INPUT_PATH%" --config-file ".\examples\myconfig_ch2en.toml"
